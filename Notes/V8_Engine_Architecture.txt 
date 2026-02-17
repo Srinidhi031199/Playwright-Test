@@ -1,0 +1,26 @@
+Step-By-Step break down (V8 engine) 
+JS --> Scanner --> Parse --> Create AST (Abstact Syntax Tree) --> Interpreter --> Compiler --> Machine Code --> Execute
+
+Step By Step Explaination: 
+
+Step1: Scanner 
+The scanner reads your raw JS code character by character and breaks it into tokens. 
+EX: const sum = 10 + 20;
+Tokens: [const] [sum] [=] [10] [+] [20] [;]
+
+Step2: Parsing (Syntax Analysis)
+The Parser takes a tokens amd build an Abstract Syntax Tree (AST)
+
+Step3: Ignition (Interpreter)
+It takes an AST and conerrts it into Bytecode
+
+Bytecode: It is smaller than a machine code, uses less memory, and allows startup compared to compiling everything upfront. 
+
+Step4: Execution + Profiling 
+As the bytcode runs, V8's internal profiler monitors the code and collects the data.
+
+Step5: Turbofan (Compiler)
+It is a optimising compiler. It takes the hot bytecode along with the profiling data and compiles it into a higly optimizes machine code. 
+
+Step6: Deoptimization
+Step7: Garbage Collection

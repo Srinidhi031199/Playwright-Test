@@ -5,7 +5,7 @@ console.log("Hello This is my first Message!")
 
 
 // Step-By-Step break down (V8 engine) 
-/* JS --> Parse --> Create AST (Abstact Syntax Tree) --> Interpreter
+/* JS --> Scanner --> Parse --> Create AST (Abstact Syntax Tree) --> Interpreter --> Compiler --> Machine Code --> Execute
 
 The engine first breaks the raw code into small meaningfull chunks is called Tokens. 
 
