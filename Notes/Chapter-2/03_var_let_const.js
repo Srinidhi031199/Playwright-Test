@@ -1,6 +1,6 @@
 //var, let, const
 
-//var
+//var --> Functioned Scope, can be re-declared and updated
 var a = 10; //Global Scope
 console.log(a); // Output: 10
 
@@ -28,7 +28,7 @@ test();
 
 console.log("-----------------------------");
 
-//let
+//let --> Blocked Scope, can be updated but not re-declared within the same scope.
 let b = 10; //Global Scope
 console.log(b); // Output: 10
 
@@ -47,7 +47,7 @@ testLet();
 
 console.log("-----------------------------");
 
-//const
+//const --> Blocked Scope, cannot be updated or re-declared within the same scope.
 const c = 10; //Global Scope
 console.log(c); // Output: 10
 
