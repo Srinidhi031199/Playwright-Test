@@ -9,3 +9,19 @@ do {
     retry++;
 } while (retry < 3);
 
+console.log("-----------------------------")
+
+let a =10;
+while(a < 10) {
+    console.log(a);
+    a++;
+}
+//Output: No output will be printed
+
+console.log("-----------------------------")
+do {
+    console.log(a);
+    a++;
+}while(a < 10);
+
+//Output: 10
