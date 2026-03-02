@@ -77,6 +77,19 @@ console.log(a); // Output: 10
 
 console.log("------------------------------");
 
+//pre-increment
+console.log(++a); // The pre-increment operator (++a) increases the value of a by 1 before it is used in the expression. So, a becomes 11 and then it is printed, resulting in 11.
+
+console.log(a); // Output: 11
+
+console.log("------------------------------");
+
+//post-increment
+console.log(a++); // The post-increment operator (a++) increases the value of a by 1 after it is used in the expression. So, it first prints the current value of a (which is 11) and then increments a to 12.
+
+console.log(a); // Output: 12
+
+console.log("------------------------------");
 
 // n%2 == 1 --> Odd Number,  n%2 == 0 --> Even Number
 
