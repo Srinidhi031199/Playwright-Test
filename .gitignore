@@ -46,3 +46,9 @@ Thumbs.db
 coverage-html/
 
 # Keep lockfiles (do not ignore package-lock.json / pnpm-lock.yaml / yarn.lock) if you rely on them
+
+# Playwright
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

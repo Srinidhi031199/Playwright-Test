@@ -1,0 +1,36 @@
+1. What is Playwright? 
+-> Playwright is an open-source automation framework for testing and scraping web applications.
+-> Later it was acquired by Microsoft.
+-> It was created for end to end testing for reliability and speed.
+-> It supports multiple browsers like Chrome, Firefox, and WebKit.
+-> It supports multiple programming languages like JavaScript, TypeScript, Python, Java, and C#.
+-> It supports Context isolation, running it on multiple browsers at the same time which is out of the box.
+-> It supports Auto-waits, which means it will wait for the element to be visible before interacting with it.
+-> It supports Parallel execution, which means it will run the tests in parallel.
+
+2. Why Playwright?
+-> It is fast, reliable, and easy to use.
+-> It is open-source and free to use.
+-> It has a large community and good documentation.
+-> It is actively maintained and updated.
+
+3. Features of Playwright
+-> Cross-browser testing
+-> Auto-waits
+-> Parallel execution
+-> Test isolation
+-> Trace viewer
+-> Code generator
+-> Test runner
+-> CI/CD integration  
+
+4. Easist way to work with Playwright?
+-> Visual Studio code. It has a lot of extensions that can help you work with Playwright. (Latest + Github Copilot)
+-> Antigravity IDE. It is a new IDE that is built for Playwright. It has a lot of features that can help you work with Playwright.
+-> Cursor, Windsurf --> Coding Assistants with AI Agents (Extra Functionality)
+
+5. Architecture of Playwright
+-> Playwright has a client-server architecture.
+-> The client is the Playwright library and the server is the Playwright browser.
+-> The client sends commands to the server and the server sends responses to the client.
+-> The communication between the client and the server is done using the WebSocket protocol.  
