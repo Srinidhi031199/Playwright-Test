@@ -1,0 +1,42 @@
+Playwright Architecture: 
+
+                              WebSocket        Server            |-> Chromium Engine
+Playwright --> Client/Apis < Connection >  Playwright Driver --> |-> Forefox Engine
+(JS/TS)                      (JSON-RPC)       (Node.js)          |-> WebKit Engine
+
+
+------------------------------------------------------------------------------------------
+
+Source Code: Human Underatndable Code -> What we write
+
+Byte Code: Conversion Intermediate Code -> JS Engine
+
+------------------------------------------------------------------------------------------
+
+WebSocket:
+    * They provide bidrectional, full duplex communication between a client and server over a single TCP connection. 
+    * This allows for real time data transfer b/w client and server, unlike HTTP where the client must request data from the server. 
+    * With WebSocket, the client or servercan push data to each other at any time after the initial handshake and connection setup. 
+
+For Ex: Youtube
+--> When I can communicate with you, you can also communicate with me. (Both Side)
+--> Both parties send data each other. 
+
+------------------------------------------------------------------------------------------
+
+1. Client Code
+2. Web Socket Connection
+3. Playwright Server | Browser Server (Node JS)
+4. JSON Format
+5. CDP (Rendering Engines) -> Chrome, Firefox, WebKit
+
+CDP -> Chrome DevTools Protocol
+
+------------------------------------------------------------------------------------------
+
+-> Playwright is a Node.js library for browser automation and testing 
+-> The core is written in TypeScript. 
+-> It uses Client/Server Architecture. The Playwright libraryin Node.js sends a command to a BrowserServer process. 
+-> BrowserServer launches and controls actual browser instances like Chromium, Firefox or WebKitvia Chrome DevTools Protocol. 
+
+------------------------------------------------------------------------------------------
