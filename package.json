@@ -2,14 +2,19 @@
   "name": "playwright-test",
   "version": "1.0.0",
   "description": "This repository contains an end-to-end test automation framework built using **Playwright**. It is designed for reliable, fast, and cross-browser testing of modern web applications.",
-  "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Srinidhi031199/Playwright-Test.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["playwright", "testing", "automation", "e2e"],
+  "author": "Srinidhi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Srinidhi031199/Playwright-Test/issues"
@@ -17,15 +22,12 @@
   "homepage": "https://github.com/Srinidhi031199/Playwright-Test#readme",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
-    "@types/node": "^25.3.3"
+    "@types/node": "^25.3.5"
   },
   "directories": {
     "test": "tests"
   },
   "dependencies": {
-    "fsevents": "^2.3.2",
-    "playwright": "^1.58.2",
-    "playwright-core": "^1.58.2",
-    "undici-types": "^7.18.2"
+    "playwright": "^1.58.2"
   }
 }
