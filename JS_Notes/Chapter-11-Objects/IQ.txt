@@ -3,16 +3,16 @@ An object is a collection of data stored in key–value pairs.
 
 Example:
 let person = {
- name: "Meeti",
- age: 85,
- city: "Bhubaneswar"
+ name: "Sri",
+ age: 27,
+ city: "Bengaluru"
 };
 ————————————————————————-
 2. How do you access object properties?
 
 In above example we can access object properties using:
-person.name // "Meeti"
-person["age"] // 85
+person.name // "Sri"
+person["age"] // 27
 ————————————————————————-
 3. Difference between dot and bracket notation
 
@@ -27,7 +27,7 @@ person.key; // undefined
 4. How to add and delete properties?
 
 Addition of properties:
-person.gender = "Female";
+person.gender = "Male";
 person["country"] = "India";
 
 Deletion of properties:
@@ -52,7 +52,7 @@ Object.keys(person);
 It returns all values as an array.
 Example:
 Object.values(person);
-// ["Meeti", "Bhubaneswar", "Female"]
+// ["Sri", "Bengaluru", "Male"]
 ————————————————————————————-
 8. What is Object.entries()?
 It returns key–value pairs as arrays.
@@ -62,8 +62,8 @@ Object.entries(person);
 Output:
 /*
 [
- ["name", "Meeti"],
- ["city", "Bhubaneswar"]
+ ["name", "Sri"],
+ ["city", "Bengaluru"]
 ]
 */
 ————————————————————————————-
