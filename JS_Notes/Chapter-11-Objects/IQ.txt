@@ -1,0 +1,82 @@
+1. What is an object in JavaScript?
+An object is a collection of data stored in key–value pairs.
+
+Example:
+let person = {
+ name: "Meeti",
+ age: 85,
+ city: "Bhubaneswar"
+};
+————————————————————————-
+2. How do you access object properties?
+
+In above example we can access object properties using:
+person.name // "Meeti"
+person["age"] // 85
+————————————————————————-
+3. Difference between dot and bracket notation
+
+person.name → Simple & commonly used, Cannot use variables
+person["age"] → More flexible, Can use variables
+
+Example :
+let key = "name";
+person[key]; // works
+person.key; // undefined
+——————————————————————————
+4. How to add and delete properties?
+
+Addition of properties:
+person.gender = "Female";
+person["country"] = "India";
+
+Deletion of properties:
+delete person.age;
+———————————————————————————
+5. How to check if a property exists?
+Method 1:
+"name" in person // true
+
+Method 2:
+person.hasOwnProperty("age") // true or false
+————————————————————————————
+6. What is Object.keys()?
+
+Its returns all keys (property names) as an array.
+Example:
+Object.keys(person);
+// ["name", "city", "gender"]
+————————————————————————————-
+7. What is Object.values()?
+
+It returns all values as an array.
+Example:
+Object.values(person);
+// ["Meeti", "Bhubaneswar", "Female"]
+————————————————————————————-
+8. What is Object.entries()?
+It returns key–value pairs as arrays.
+Example:
+Object.entries(person);
+
+Output:
+/*
+[
+ ["name", "Meeti"],
+ ["city", "Bhubaneswar"]
+]
+*/
+————————————————————————————-
+9. How to loop through an object?
+Method 1:
+Using for...in:
+for (let key in person) {
+ console.log(key, person[key]);
+}
+
+Method 2:
+Using Object.entries():
+for (let [key, value] of Object.entries(person)) {
+ console.log(key, value);
+}
+————————————————————————————-
